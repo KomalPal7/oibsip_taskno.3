@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    width: 100%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 600px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    margin-left: 470px;
+    margin-right: 470px;
+    /* border: 5px solid ; */
+    box-shadow: rgb(188, 207, 212) 0px 54px 55px, rgb(188, 207, 212) 0px -12px 30px, rgb(188, 207, 212) 0px 4px 6px, rgb(188, 207, 212) 0px 12px 13px,rgb(188, 207, 212) 0px -3px 5px;
+    border-radius: 10px;
+    
+}
+.box::before{
+    content: "";
+    position: absolute;
+    background: url('bg2.jpeg')no-repeat center center/cover;
+    height: 450px;
+    width: 600px;
+    border-radius: 10px;
+    /* top: 160px;
+    left: 470px; */
+    z-index: -1;
+    opacity: 0.5;
+}
+
+ h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(82, 116, 124);
+    margin-top: 20px;
+    margin-bottom:50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 10px 20px;
+    font-size: 29px;
+    border: 2px solid rgb(198, 145, 76);
+    border-radius: 10px;
+    color: rgb(89, 116, 124);
+    background-color: transparent;
+}
+label{
+    margin: 0px 20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(82, 158, 133);
+}
+@media(450px <= width <= 640px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+    
+        flex-wrap: wrap;
+        width: 400px;
+        height: 450px;
+    }
+    .box::before{
+        width: 400px;
+    }
+   
+}
+@media(0px <= width <= 450px){
+   .box{
+    display: flex;
+        flex-direction: column;
+    
+        flex-wrap: wrap;
+        width: 300px;
+        height: 550px;
+   }
+   .box::before{
+    width: 300px;
+    height: 550px;
+}
+ h1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+input{
+    width: 85%;
+}
+
+}
+    
